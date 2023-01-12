@@ -19,7 +19,7 @@ reader = csv.reader(input_file, delimiter=",")
 writer = csv.writer(output_file, delimiter=",")
 
 header = next(reader)
-header_list = ["Year","Month","Day","Time","TempK"]
+header_list = ["Year","Month","Day","Time","TempF"]
 writer.writerow(header_list)
 
 for row in reader:
